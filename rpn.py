@@ -28,6 +28,13 @@ def calculate(arg):
             stack.append(result)
         print(stack)
     if len(stack) is not 1:
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
+        print("YOU FUCKED UP")
         raise TypeError("Too many parameters")
     return stack.pop()
 
