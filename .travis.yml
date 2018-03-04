@@ -1,0 +1,13 @@
+language: python
+python:
+    - "3.5"
+script:
+    - make test 
+
+# other things like installs can happen here with:
+# install:
+#   - pip install -e .
+#
+# use a virtual environment like:
+# virtualenv:
+#   system_site_packages: true
