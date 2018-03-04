@@ -2,7 +2,10 @@
 """RPN."""
 
 import operator
+import logging
 
+
+logging.basicConfig(filename="rpn.log", level=logging.DEBUG)
 
 operators = {
         "+": operator.add,
@@ -26,15 +29,15 @@ def calculate(arg):
             arg1 = stack.pop()
             result = function(arg1, arg2) 
             stack.append(result)
-        print(stack)
+        logging.info(stack)
     if len(stack) is not 1:
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
-        print("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
+        logging.error("YOU FUCKED UP")
         raise TypeError("Too many parameters")
     return stack.pop()
 
