@@ -20,8 +20,8 @@ def calculate(arg):
             stack.append(value)
         except ValueError:
             function = operators[token]
-            arg1 = stack.pop()
             arg2 = stack.pop()
+            arg1 = stack.pop()
             result = function(arg1, arg2) 
             stack.append(result)
         print(stack)
